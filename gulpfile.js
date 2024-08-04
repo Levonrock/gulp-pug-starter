@@ -20,7 +20,13 @@ function serve() {
 
 function pug() {
   return gulp.src('src/pages/**/*.pug')
+<<<<<<< HEAD
         .pipe(gulpPug())
+=======
+        .pipe(gulpPug({
+          pretty: true
+        }))
+>>>>>>> 1de23038a521717823cac1e481cfccf716a47370
         .pipe(gulp.dest('dist/'))
         .pipe(browserSync.reload({stream: true}));
 }
